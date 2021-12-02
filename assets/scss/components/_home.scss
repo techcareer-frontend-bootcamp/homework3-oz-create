@@ -1,0 +1,98 @@
+.main-container{
+   width: 80%;
+   height: 100vh;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   background-color: $section-light;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+  
+
+   &__texts{
+        h1{
+                  font-size: var(--biggest-font-size);
+                  font-weight: $font-regular;
+        }
+        p{
+                  font-size: var(--smaller-font-size);
+        }
+   }
+
+   &__airpods{
+      height:500px;
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+
+      &__left{
+         height: 400px;
+         width: auto;
+         animation-name: airpods1;
+         animation-duration: 2.5s;
+         animation-iteration-count: infinite;
+      }
+
+     &__right{
+      height: 400px;
+      width: auto;
+      animation-name: airpods2;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      }     
+   }
+   
+   &__scroll{
+             text-align: center;
+             position: absolute;
+             bottom: 30px;
+
+             p{
+                       font-size: var(--smaller-font-size);
+                       margin-bottom: 15px;
+             }
+
+             a{
+                       font-size: 40px;
+                       color: $second-color;
+             }     
+   }
+
+   &__2{
+      width: 80%;
+      height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      
+
+      img{
+         height: 350px;
+         width: auto;
+         margin-left: 50px;
+         animation-name: airpods3;
+         animation-duration: 2.5s;
+         animation-iteration-count: infinite;
+  
+      }
+
+      p{
+         font-size: $font-regular;
+         text-align: center;
+
+         span{
+            font-size: var(--bigger-font-size);
+            font-weight: $font-bold;
+         }
+      }
+
+   }
+   
+}
+
